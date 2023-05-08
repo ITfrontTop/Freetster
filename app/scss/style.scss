@@ -1,10 +1,17 @@
-// @import 'vars';
-// @import 'fonts';
-// @import 'reset';
-// @import 'libs';
-// @import 'global';
-// @import 'on-plagin';
+@import 'reset';
+@import 'fonts';
+@import 'global';
+@import 'vars';
+@import 'libs';
 
-// .header {
+/*header home*/
 
-// }
+.header-home {
+    height: 535px;
+    background-image: url('../images/header-home-bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@import 'media';
