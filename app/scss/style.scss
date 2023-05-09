@@ -11,7 +11,64 @@
     background-image: url('../images/header-home-bg.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    &__nav {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        & + .menu__item {
+            margin-left: 51px;
+        }
+    }
+    &__link {
+        @extend %mulish-600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.logo {
+    
+}
+
+.register {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        @extend %mulish-600;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &__booking {
+        margin-right: 49px;
+    }
+    &__register {
+        padding: 14px 29px 13px;
+        background-color: #00A5F4;
+        border-radius: 2px;
+        margin-left: 34px;
+    }
+}
+
+
+
 
 
 @import 'media';
