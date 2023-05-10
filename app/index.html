@@ -32,7 +32,9 @@
                             </li>
                         </ul>
                     </nav>
-                    <img class="logo" src="images/logo.svg" alt="logo">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
                     <div class="register">
                         <ul class="register__list">
                             <li class="register__item">
@@ -66,10 +68,16 @@
                                 Different Drop-off
                             </a>
                         </div>
-                        <form action="#">
-                            <input class="header-content__input-place" type="text" placeholder="Enter City, Airport, Station, Region, District…">
-                            <input class="header-content__input-data" type="datetime-local" placeholder="">
-                            <input class="header-content__input-data" type="datetime-local" placeholder="">
+                        <form class="header-content__form" action="#">
+                            <div class="header-content__place-box">
+                                <input class="header-content__input-place" type="text" placeholder="Enter City, Airport, Station, Region, District…">
+                            </div>
+                            <div class="header-content__data-box">
+                                <input class="header-content__input-data" type="datetime-local" placeholder="">
+                            </div>
+                            <div class="header-content__data-box">
+                                <input class="header-content__input-data" type="datetime-local" placeholder="">
+                            </div>
                             <button class="header-content__btn" type="submit">
                                 Search
                             </button>
