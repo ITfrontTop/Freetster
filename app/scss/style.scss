@@ -4,14 +4,16 @@
 @import 'vars';
 @import 'libs';
 
-/*header*/
+/*header home*/
 
 /*menu logo registr*/
 .header-home {
-    height: 535px;
     background-image: url('../images/header-home-bg.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    &__inner {
+        height: 535px;
+    }
     &__nav {
         height: 80px;
         display: flex;
@@ -150,6 +152,127 @@
         background-color: #82C141;
         border-radius: 2px;
         border: none;
+    }
+}
+/*header page*/
+.header {
+    height: 80px;
+    background-image: none;
+    background-color: #303030;
+}
+
+
+/*search*/
+.search {
+    &__inner {
+        height: 90px;
+        background-color: #FCFCFC;
+    }
+    &__select {
+        display: block;
+        padding: 18px 44px 16px 36px;
+
+    }
+    &__label {
+        display: inline-block;
+        margin-left: 13px;
+        padding: 0 4px;
+        transform: translateY(6px);
+        background-color: #fff;
+    }
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #303030;
+    &__top {
+        border-bottom: 1px solid #535353;
+    }
+    &__logo-box {
+        height: 144px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        display: inline-block;
+    }
+    &__content {
+        margin-top: 11px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__setting {
+        margin-top: 9px;
+        width: 235px;
+    }
+    &__label {
+        @extend %mulish-600;
+        font-size: 13px;
+        line-height: 32px;
+        color: #fff;
+        letter-spacing: .5px;
+    }
+    &__select {
+        display: block;
+        width: 100%;
+        @extend %mulish-300;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: .5px;
+        padding: 10px 36px 9px 13px;
+        border: none;
+        & + .footer__select {
+            margin-top: 15px;
+        }
+    }
+    &__info {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    &__info-box {
+        & +  .footer__info-box {
+            margin-left: 67px;
+        }
+    }
+    &__info-title {
+        @extend %mulish-600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: .5px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__info-text {
+        @extend %mulish-300;
+        font-size: 13px;
+        line-height: 32px;
+        letter-spacing: .5px;
+        color: #fff;
+    }
+    &__bottom-inner {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__social-link {
+        & + .footer__social-link {
+            margin-left: 19px;
+        }
+    }
+    &__copy-text {
+        @extend %mulish-300;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .5px;
+        color: #fff;
     }
 }
 

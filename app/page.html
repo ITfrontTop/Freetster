@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="header-home">
+    <header class="header-home header">
         <div class="container">
             <div class="header-home__inner">
                 <div class="header-home__nav">
@@ -57,39 +57,27 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header-content">
-                    <h1 class="header-content__title">
-                        Find your ideal car from 500+ cars
-                    </h1>
-                    <div class="header-content__wrapper">
-                        <div class="header-content__filter">
-                            <a class="header-content__filter-link" href="#">
-                                Same as Drop-off
-                            </a>
-                            <a class="header-content__filter-link" href="#">
-                                Different Drop-off
-                            </a>
-                        </div>
-                        <form class="header-content__form" action="#">
-                            <div class="header-content__place-box">
-                                <input class="header-content__input-place" type="text"
-                                    placeholder="Enter City, Airport, Station, Region, District…">
-                            </div>
-                            <div class="header-content__data-box">
-                                <input class="header-content__input-data" type="datetime-local" placeholder="">
-                            </div>
-                            <div class="header-content__data-box">
-                                <input class="header-content__input-data" type="datetime-local" placeholder="">
-                            </div>
-                            <button class="header-content__btn" type="submit">
-                                Search
-                            </button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
+
+    <section class="search">
+        <div class="search__inner">
+            <div class="container">
+                <form class="search__form" action="#">
+                    <div class="search__form-box">
+                        <label class="search__label">
+                            Pickup
+                        </label>
+                        <select class="search__select" placeholder="Munich, Germany (MUC-Franz Josef Stra…)">
+                            <option class="search__option">Munich, Germany (MUC-Franz Josef Stra…)</option>
+                            <option class="search__option">Munich, Germany (MUC-Franz Josef Stra…)</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <main class="main">
         content
