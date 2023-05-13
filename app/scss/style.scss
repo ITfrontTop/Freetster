@@ -162,27 +162,6 @@
 }
 
 
-/*search*/
-.search {
-    &__inner {
-        height: 90px;
-        background-color: #FCFCFC;
-    }
-    &__select {
-        display: block;
-        padding: 18px 44px 16px 36px;
-
-    }
-    &__label {
-        display: inline-block;
-        margin-left: 13px;
-        padding: 0 4px;
-        transform: translateY(6px);
-        background-color: #fff;
-    }
-}
-
-
 /*Footer*/
 
 .footer {
@@ -275,6 +254,110 @@
         color: #fff;
     }
 }
+
+/*search section*/
+.search {
+    &__inner {
+        height: 90px;
+        background-color: #FCFCFC;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+    &__pickup-box, 
+    &__dropoff-box,
+    &__duration-box {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/arow-down.svg');
+            bottom: 21px;
+            right: 19px;
+        }
+    }
+    &__pickup-box, 
+    &__dropoff-box {
+        margin-right: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 18px;
+            background-image: url('../images/icon_location.svg');
+            bottom: 18px;
+            left: 13px;
+        }
+    }
+    &__duration-box {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 15px;
+            background-image: url('../images/time.svg');
+            bottom: 17px;
+            left: 13px;
+        }
+    }
+
+    &__pickup-select,
+    &__dropoff-select,
+    &__duration-select {
+        display: block;
+        padding: 18px 44px 16px 36px;
+        background-color: #FBFBFB;
+        color: #303030;
+        border: .5px solid #A3A3A3;
+        border-radius: 2px;
+        appearance: none;
+    }
+    &__pickup-select,
+    &__dropoff-select {
+        width: 350px;
+    }
+    &__duration-select {
+        width: 192px;
+    }
+
+    &__pickup-label,
+    &__dropoff-label,
+    &__duration-label {
+        display: inline-block;
+        margin-left: 13px;
+        padding: 0 4px;
+        transform: translateY(7px);
+        background-color: #fff;
+        @extend %mulish-700;
+        font-size: 10px;
+        line-height: 13px;
+        color: #7C7C7C;
+    }
+    &__pickup-option,
+    &__dropoff-option,
+    &__duration-option {
+        @extend %mulish-400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #303030;
+    }
+    &__btn {
+        margin: 37px 0 0 35px;
+        height: 15px;
+        @extend %mulish-700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #82C141;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+    }
+
+}
+
 
 
 
