@@ -11,6 +11,7 @@
     background-image: url('../images/header-home-bg.avif');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 145px;
     &__inner {
         height: 535px;
     }
@@ -360,7 +361,90 @@
 
 /*about section*/
 
+.about {
+    margin-bottom: 164px;
+    &__title {
+        text-align: center;
+        @extend %mulish-600;
+        font-size: 35px;
+        line-height: 44px;
+        letter-spacing: .5px;
+        color: #303030;
+        margin-bottom: 21px;
+    }
+    &__text {
+        text-align: center;
+        max-width: 636px;
+        @extend %mulish-300;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .53px;
+        color: #303030;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    &__links {
+        display: flex;
+        justify-content: center;
+    }
+    &__link {
+        padding: 18px 48px 17px;
+        border-radius: 2px;
+        @extend %mulish-700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #82C141;
+        transition: all .2s;
+        & + .about__link {
+            margin-left: 23px;
+        }
+        &:hover {
+            background-color: #82C141;
+            color: #fff;
 
+        }
+    }
+}
+
+
+/*place section*/
+.place {
+    margin-bottom: 240px;
+    &__title {
+        text-align: center;
+        margin-bottom: 65px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(3, 270px);
+        grid-gap: 30px;
+    }
+    &__item {
+        background-color: green;
+    }
+    &__dubai {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    &__amsterdam {
+        grid-row-start: span 2;
+    }
+    &__new-york {
+        grid-column-start: span 2;
+    }
+}
+
+/*title*/
+.title {
+    @extend %mulish-600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: .5px;
+    color: #303030;
+}
 
 
 
