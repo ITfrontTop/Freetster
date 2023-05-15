@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Freetster</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
     <header class="header-home">
@@ -14,39 +16,41 @@
             <div class="header-home__inner">
                 <div class="header-home__nav">
                     <nav class="menu">
-                        <ul class="menu-list">
-                            <li class="menu-item">
-                                <a class="menu-link" href="#">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     About
                                 </a>
                             </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="#">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     Contact
                                 </a>
                             </li>
-                            <li class="menu-item">
-                                <a class="menu-link" href="#">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     FAQs
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <img class="logo" src="images/logo.svg" alt="logo">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
                     <div class="register">
-                        <ul class="register-list">
-                            <li class="register-item">
-                                <a class="register-link">
+                        <ul class="register__list">
+                            <li class="register__item">
+                                <a class="register__link register__booking">
                                     Manage booking
                                 </a>
                             </li>
-                            <li class="register-item">
-                                <a class="register-link">
+                            <li class="register__item">
+                                <a class="register__link register__signin">
                                     Sign in
                                 </a>
                             </li>
-                            <li class="register-item">
-                                <a class="register-link">
+                            <li class="register__item">
+                                <a class="register__link register__register">
                                     Register
                                 </a>
                             </li>
@@ -66,10 +70,17 @@
                                 Different Drop-off
                             </a>
                         </div>
-                        <form action="#">
-                            <input class="header-content__input-place" type="text" placeholder="Enter City, Airport, Station, Region, District…">
-                            <input class="header-content__input-data" type="datetime-local" placeholder="">
-                            <input class="header-content__input-data" type="datetime-local" placeholder="">
+                        <form class="header-content__form" action="#">
+                            <div class="header-content__place-box">
+                                <input class="header-content__input-place" type="text"
+                                    placeholder="Enter City, Airport, Station, Region, District…">
+                            </div>
+                            <div class="header-content__data-box">
+                                <input class="header-content__input-data" type="datetime-local" value="">
+                            </div>
+                            <div class="header-content__data-box">
+                                <input class="header-content__input-data" type="datetime-local" value="">
+                            </div>
                             <button class="header-content__btn" type="submit">
                                 Search
                             </button>
@@ -80,10 +91,333 @@
         </div>
     </header>
 
-    <footer class="footer">
+    <main class="main">
 
+        <section class="about">
+            <div class="container">
+                <h3 class="about__title">
+                    World's biggest online car rental service
+                </h3>
+                <p class="about__text">
+                    Etiam vel pellentesque velit, ut feugiat nisi. Nullam augue purus, facilisis et varius non, dignissim dapibus orci. Maecenas quis vulputate ligula, eu elementum lorem. Maecenas semper sodales ligula. Nam porta fermentum est nec blandit.
+                </p>
+                <div class="about__links">
+                    <a class="about__link" href="#">
+                        Book your car
+                    </a>
+                    <a class="about__link" href="#">
+                        Find out more
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="place">
+            <div class="container">
+                <h2 class="place__title title">
+                    Popular Places
+                </h2>
+                <div class="place__items">
+                    <div class="place__item place__london">
+                        <h6 class="place__item-title">
+                            London, United Kingdom
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place__item place__paris">
+                        <h6 class="place__item-title">
+                            Paris, France
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place__item place__dubai">
+                        <h6 class="place__item-title">
+                            Dubai, United Arab Emirates
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place__item place__amsterdam">
+                        <h6 class="place__item-title">
+                            Amsterdam, Netherlands
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place__item place__rome">
+                        <h6 class="place__item-title">
+                            Rome, Italy
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place__item place__new-york">
+                        <h6 class="place__item-title">
+                            New York, NY
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                    <div class="place__item place__barcelona">
+                        <h6 class="place__item-title">
+                            Barcelona, Spain
+                        </h6>
+                        <div class="place__item-links">
+                            <a class="place__item-btn" href="#">
+                                Book your car
+                            </a>
+                            <a class="place__item-link" href="#">
+                                View offers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Доробить слайдер как в макете -->
+        <section class="slider">
+            <div class="container">
+                <h2 class="slider__title title">
+                    Top picks from your city
+                </h2>
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <img class="slider__item-img" src="images/chevrole.png" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__item-img" src="images/hundai.png" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__item-img" src="images/kia.png" alt="#">
+                    </div>
+
+                    <div class="slider__item">
+                        <img class="slider__item-img" src="images/chevrole.png" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__item-img" src="images/hundai.png" alt="#">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__item-img" src="images/kia.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="info__descriptions">
+                        <h4 class="info__descriptions-title">
+                            5 million reviews and counting
+                        </h4>
+                        <p class="info__descriptions-text">
+                            Etiam vel pellentesque velit, ut feugiat nisi. Nullam augue purus, facilisis et varius non, dignissim dapibus orci. Maecenas quis vulputate ligula, 
+                        </p>
+                        <div class="info__links">
+                            <a class="info__link" href="#">
+                                Plan your next trip
+                            </a>
+                            <a class="info__link" href="#">
+                                View Reviews
+                            </a>
+                        </div>
+                        <h5 class="info__partners-title">
+                            Our Partners
+                        </h5>
+                        <div class="info__partners">
+                            <img class="info__partners-img" src="images/disney.svg">
+                            <img class="info__partners-img" src="images/fedex.svg">
+                            <img class="info__partners-img" src="images/cola.svg">
+                        </div>
+                    </div>
+                    <div class="info__img-box">
+                        <img class="info__img" src="images/info-img.avif">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__install">
+                        <div class="contacts__install-info">
+                            <h3 class="contacts__install-title">
+                                Fleetster for iOS & Android
+                            </h3>
+                            <p class="contacts__install-text">
+                                Download Fleetster app for your mobile device for the easier access to best offers.
+                            </p>
+                        </div>
+                        <div class="contacts__btn-box">
+                            <a class="contacts__link" href="#">
+                                <img class="contacts__btn-img" src="images/apple-btn.svg" alt="#">
+                            </a>
+                            <a class="contacts__link" href="#">
+                                <img class="contacts__btn-img" src="images/android-btn.svg" alt="#">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts__list">
+                        <div class="contacts__list-info">
+                            <h3 class="contacts__list-title">
+                                Sign up for our newsletter
+                            </h3>
+                            <p class="contacts__list-text">
+                                Don’t miss our new offers and keep up to date.
+                            </p>
+                        </div>
+                        <form class="contacts__list-form" action="#">
+                            <input class="contacts__list-input" type="email" placeholder="Your email address…">
+                            <button class="contacts__list-btn" type="submit">
+                                Sign me up
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__logo-box">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__setting">
+                        <form class="footer__form">
+                            <labet class="footer__label">
+                                Site Language/Currency
+                            </labet>
+                            <select class="footer__select">
+                                <option class="footer__option">English</option>
+                                <option class="footer__option">Ukraine</option>
+                                <option class="footer__option">Poland</option>
+                            </select>
+                            <select class="footer__select">
+                                <option class="footer__option">USD</option>
+                                <option class="footer__option">UAH</option>
+                                <option class="footer__option">EUR</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__info-box">
+                            <h5 class="footer__info-title">
+                                Company
+                            </h5>
+                            <p class="footer__info-text">
+                                About
+                            </p>
+                            <p class="footer__info-text">
+                                Blog
+                            </p>
+                            <p class="footer__info-text">
+                                Contact us
+                            </p>
+                        </div>
+                        <div class="footer__info-box">
+                            <h5 class="footer__info-title">
+                                Legal
+                            </h5>
+                            <p class="footer__info-text">
+                                Terms & Conditions
+                            </p>
+                            <p class="footer__info-text">
+                                Privacy Policy
+                            </p>
+                            <p class="footer__info-text">
+                                Legal Information
+                            </p>
+                        </div>
+                        <div class="footer__info-box">
+                            <h5 class="footer__info-title">
+                                Explore
+                            </h5>
+                            <p class="footer__info-text">
+                                How it works?
+                            </p>
+                            <p class="footer__info-text">
+                                Help
+                            </p>
+                            <p class="footer__info-text">
+                                FAQs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/twitter.svg" alt="twitter">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="footer__copy">
+                        <p class="footer__copy-text">
+                            © Fleetster Car Rentals 2018 All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
