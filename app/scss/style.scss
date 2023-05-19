@@ -935,6 +935,61 @@
 .filters {
     width: 321px;
     margin-right: 19px;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    padding: 27px 27px 27px 17px;
+    &__title {
+        @extend %mulish-600;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: .5px;
+        color: #303030;
+        margin-right: 11px;
+    }
+    &__title-box {
+        display: flex;
+        margin-bottom: 36px;
+    }
+    &__title-subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #F5A623;
+        @extend %mulish-300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+}
+
+.filter-type {
+    &__title {
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+    }
+    &__label {
+        display: flex;
+    }
+    &__input {
+        margin-top: 27px;
+        border: 0.25px solid #303030;
+        border-radius: 2px;
+    }
+    &__text {
+        margin-top: 17px;
+        margin-left: 14px;
+        @extend %mulish-600;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+    }
 }
 
 
