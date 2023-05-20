@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freetster</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header-home header">
+        <div class="container">
+            <div class="header-home__inner">
+                <div class="header-home__nav">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    FAQs
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/src/logo.svg" alt="logo">
+                    </a>
+                    <div class="register">
+                        <ul class="register__list">
+                            <li class="register__item">
+                                <a class="register__link register__booking">
+                                    Manage booking
+                                </a>
+                            </li>
+                            <li class="register__item">
+                                <a class="register__link register__signin">
+                                    Sign in
+                                </a>
+                            </li>
+                            <li class="register__item">
+                                <a class="register__link register__register">
+                                    Register
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="search__inner">
+            <div class="container">
+                <form class="search__form" action="#">
+                    <div class="search__pickup-box">
+                        <label class="search__pickup-label">
+                            Pickup
+                        </label>
+                        <select class="search__pickup-select" placeholder="Munich, Germany (MUC-Franz Josef Stra…)">
+                            <option class="search__pickup-option">Munich, Germany (MUC-Franz Josef Stra…)</option>
+                            <option class="search__pickup-option">Munich, Germany (MUC-Franz Josef Stra…)</option>
+                        </select>
+                    </div>
+                    <div class="search__dropoff-box">
+                        <label class="search__dropoff-label">
+                            Drop-off
+                        </label>
+                        <select class="search__dropoff-select" placeholder="Cologne, Germany (CGN-Cologne - Bonn)">
+                            <option class="search__dropoff-option">Cologne, Germany (CGN-Cologne - Bonn)</option>
+                            <option class="search__dropoff-option">Cologne, Germany (CGN-Cologne - Bonn)</option>
+                        </select>
+                    </div>
+                    <div class="search__duration-box">
+                        <label class="search__duration-label">
+                            Duration
+                        </label>
+                        <select class="search__duration-select">
+                            <option class="search__duration-option">3 Days</option>
+                            <option class="search__duration-option">4 Days</option>
+                        </select>
+                    </div>
+                    <a class="search__btn" href="#">
+                        Refine Search
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="product-list">
+            <div class="container">
+                <div class="product-list__inner">
+                    <div class="filters">
+                        <div class="filters__title-box">
+                            <h3 class="filters__title">
+                                Filters
+                            </h3>
+                            <p class="filters__title-subtitle">2</p>
+                        </div>
+
+                        <div class="filter-type">
+                            <h3 class="filter-type__title">
+                                Vehicle Type
+                            </h3>
+
+                            <form class="filter-type__form" action="#">
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox" checked>
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text">
+                                        Economy
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Compact
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Midsize
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Standard
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Fullsize
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Premium
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Luxury
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Convertible
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Minivan
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Sport Utility
+                                    </p>
+                                </label>
+                                <label class="filter-type__label">
+                                    <input class="filter-type__input" type="checkbox">
+                                    <span class="filter-type__checkbox"></span>
+                                    <p class="filter-type__text"></p>
+                                        Sports car
+                                    </p>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter-price">
+                            <h3 class="filter-price__title">
+                                Price Range
+                            </h3>
+                            <form class="filter-price__form" action="#">
+                                <label class="filter-price__label">
+                                    <input class="filter-price__input" type="checkbox">
+                                    <span class="filter-price__checkbox"></span>
+                                    <p class="filter-price__text">
+                                        $50-100
+                                    </p>
+                                </label>
+                                <label class="filter-price__label">
+                                    <input class="filter-price__input" type="checkbox">
+                                    <span class="filter-price__checkbox"></span>
+                                    <p class="filter-price__text">
+                                        $100-200
+                                    </p>
+                                </label>
+                                <label class="filter-price__label">
+                                    <input class="filter-price__input" type="checkbox" checked>
+                                    <span class="filter-price__checkbox"></span>
+                                    <p class="filter-price__text">
+                                        $200-500
+                                    </p>
+                                </label>
+                                <label class="filter-price__label">
+                                    <input class="filter-price__input" type="checkbox">
+                                    <span class="filter-price__checkbox"></span>
+                                    <p class="filter-price__text">
+                                        $500-1000+
+                                    </p>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter-size">
+                            <h3 class="filter-size__title">
+                                Party Size
+                            </h3>
+                            <form class="filter-size__form" action="#">
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <p class="filter-size__text">
+                                        2
+                                    </p>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox" checked>
+                                    <span class="filter-size__checkbox"></span>
+                                    <p class="filter-size__text">
+                                        4
+                                    </p>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <p class="filter-size__text">
+                                        5
+                                    </p>
+                                </label>
+                                <label class="filter-size__label">
+                                    <input class="filter-size__input" type="checkbox">
+                                    <span class="filter-size__checkbox"></span>
+                                    <p class="filter-size__text">
+                                        7
+                                    </p>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="filter-spacific">
+                            <h3 class="filter-spacific__title">
+                                Specifications
+                            </h3>
+                            <form class="filter-spacific__form" action="#">
+                                <label class="filter-spacific__label">
+                                    <input class="filter-spacific__input" type="checkbox">
+                                    <span class="filter-spacific__checkbox"></span>
+                                    <p class="filter-spacific__text">
+                                        Coupe
+                                    </p>
+                                </label>
+                                <label class="filter-spacific__label">
+                                    <input class="filter-spacific__input" type="checkbox">
+                                    <span class="filter-spacific__checkbox"></span>
+                                    <p class="filter-spacific__text">
+                                        Cabrio
+                                    </p>
+                                </label>
+                                <label class="filter-spacific__label">
+                                    <input class="filter-spacific__input" type="checkbox" checked>
+                                    <span class="filter-spacific__checkbox"></span>
+                                    <p class="filter-spacific__text">
+                                        Sedan
+                                    </p>
+                                </label>
+                                <label class="filter-spacific__label">
+                                    <input class="filter-spacific__input" type="checkbox">
+                                    <span class="filter-spacific__checkbox"></span>
+                                    <p class="filter-spacific__text">
+                                        Jeep
+                                    </p>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="product-list__content">
+                        <div class="product-list__filter">
+                            <p class="product-list__filter-title">
+                                We found <b>179</b> Cars at Munich airport
+                            </p>
+                            <form class="product-list__form" action="#">
+                                <label class="product-list__label">
+                                    Sort by
+                                </label>
+                                <select class="product-list__select">
+                                    <option class="product-list__option">
+                                        Price: High to Low
+                                    </option>
+                                    <option class="product-list__option">
+                                        Price: Low to High
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                        <ul class="product-list__items">
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/passat-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                Volkswagen Passat Estate
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Estate
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/opel-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                Intermediate, 4-5 Door, Manual, Aircon (Group E)
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product-list__item">
+                                <div class="product-list__item-inner">
+                                    <div class="product-list__img-box">
+                                        <img class="product-list__img" src="images/src/mers-list.png">
+                                    </div>
+                                    <div class="product-list__info">
+                                        <div class="product-list__link-box">
+                                            <a class="product-list__info-title" href="#">
+                                                    Mercedes-Benz E200/220 or similar
+                                            </a>
+                                            <div class="product-list__link-wrapper">
+                                                <a class="product-list__filter-type">
+                                                    Sedan
+                                                </a>
+                                                <a class="product-list__filter-space">
+                                                    PDAR
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <ul class="product-list__include">
+                                            <li class="product-list__include-title">
+                                                This package includes:
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Unlimited free kilometers incl.
+                                            </li>
+                                            <li class="product-list__include-item">
+                                                Sat Nav included
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__price">
+                                        <div class="product-list__price-inner">
+                                            <p class="product-list__price-title">
+                                                Your Pricing
+                                            </p>
+                                        </div>
+                                        <div class="product-list__price-box">
+                                            <div class="product-list__price-pre-box">
+                                                <p class="product-list__price-pre">
+                                                    $36
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    per day
+                                                </p>
+                                            </div>
+                                            <div class="product-list__price-total-box">
+                                                <p class="product-list__price-total">
+                                                    $149
+                                                </p>
+                                                <p class="product-list__price-subtitle">
+                                                    total
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="product-list__price-btn" href="#">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__logo-box">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" src="images/src/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__setting">
+                        <form class="footer__form">
+                            <labet class="footer__label">
+                                Site Language/Currency
+                            </labet>
+                            <select class="footer__select">
+                                <option class="footer__option">English</option>
+                                <option class="footer__option">Ukraine</option>
+                                <option class="footer__option">Poland</option>
+                            </select>
+                            <select class="footer__select">
+                                <option class="footer__option">USD</option>
+                                <option class="footer__option">UAH</option>
+                                <option class="footer__option">EUR</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__info-box">
+                            <h5 class="footer__info-title">
+                                Company
+                            </h5>
+                            <p class="footer__info-text">
+                                About
+                            </p>
+                            <p class="footer__info-text">
+                                Blog
+                            </p>
+                            <p class="footer__info-text">
+                                Contact us
+                            </p>
+                        </div>
+                        <div class="footer__info-box">
+                            <h5 class="footer__info-title">
+                                Legal
+                            </h5>
+                            <p class="footer__info-text">
+                                Terms & Conditions
+                            </p>
+                            <p class="footer__info-text">
+                                Privacy Policy
+                            </p>
+                            <p class="footer__info-text">
+                                Legal Information
+                            </p>
+                        </div>
+                        <div class="footer__info-box">
+                            <h5 class="footer__info-title">
+                                Explore
+                            </h5>
+                            <p class="footer__info-text">
+                                How it works?
+                            </p>
+                            <p class="footer__info-text">
+                                Help
+                            </p>
+                            <p class="footer__info-text">
+                                FAQs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/src/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/src/twitter.svg" alt="twitter">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="images/src/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="footer__copy">
+                        <p class="footer__copy-text">
+                            © Fleetster Car Rentals 2018 All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

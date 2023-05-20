@@ -8,7 +8,7 @@
 
 /*menu logo registr*/
 .header-home {
-    background-image: url('../images/header-home-bg.avif');
+    background-image: url('../images/src/header-home-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 145px;
@@ -116,7 +116,7 @@
             position: absolute;
             width: 13px;
             height: 18px;
-            background-image: url('../images/icon_location.svg');
+            background-image: url('../images/src/icon_location.svg');
             background-repeat: no-repeat;
             top: 16px;
             left: 13px;
@@ -161,6 +161,7 @@
     height: 80px;
     background-image: none;
     background-color: #303030;
+    margin-bottom: 0;
 }
 
 
@@ -279,7 +280,7 @@
             position: absolute;
             width: 14px;
             height: 7px;
-            background-image: url('../images/arow-down.svg');
+            background-image: url('../images/src/arow-down.svg');
             bottom: 21px;
             right: 19px;
         }
@@ -292,7 +293,7 @@
             position: absolute;
             width: 13px;
             height: 18px;
-            background-image: url('../images/icon_location.svg');
+            background-image: url('../images/src/icon_location.svg');
             bottom: 18px;
             left: 13px;
         }
@@ -303,8 +304,8 @@
             position: absolute;
             width: 14px;
             height: 15px;
-            background-image: url('../images/time.svg');
-            bottom: 17px;
+            background-image: url('../images/src/time.svg');
+            bottom: 19px;
             left: 13px;
         }
     }
@@ -464,7 +465,7 @@
         justify-content: center;
         transition: all .3s;
         &:hover {
-            box-shadow: 0px 0px 7px 2px #000;
+            box-shadow: 0px 0px 7px 2px #787878;
             .place__item-links {
                 display: flex;
                 flex-direction: column;
@@ -480,36 +481,36 @@
         grid-gap: 30px;
     }
     &__london {
-        background-image: url('../images/london.avif');
+        background-image: url('../images/src/london.jpg');
         background-size: cover;
 
     }
     &__paris {
-        background-image: url('../images/paris.avif');
+        background-image: url('../images/src/paris.jpg');
         background-size: cover;
     }
     &__dubai {
-        background-image: url('../images/dubai.avif');
+        background-image: url('../images/src/dubai.jpg');
         background-size: cover;
         grid-column-start: span 2;
         grid-row-start: span 2;
     }
     &__amsterdam {
-        background-image: url('../images/amsterdam.avif');
+        background-image: url('../images/src/amsterdam.jpg');
         background-size: cover;
         grid-row-start: span 2;
     }
     &__rome {
-        background-image: url('../images/rome.avif');
+        background-image: url('../images/src/rome.jpg');
         background-size: cover;
     }
     &__new-york {
-        background-image: url('../images/new-york.avif');
+        background-image: url('../images/src/new-york.jpg');
         background-size: cover;
         grid-column-start: span 2;
     }
     &__barcelona {
-        background-image: url('../images/barcelona.avif');
+        background-image: url('../images/src/barcelona.jpg');
         background-size: cover;
     }
 }
@@ -701,12 +702,676 @@
             position: absolute;
             width: 19px;
             height: 14px;
-            background-image: url('../images/email.svg');
+            background-image: url('../images/src/email.svg');
             top: 23px;
             left: 12px;
         }
     }
 }
+
+/*Product-list content*/
+.product-list {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 89px 0 137px;
+    }
+    &__content {
+        width: 860px;
+    }
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 35px;
+        margin-bottom: 28px;
+    }
+    &__filter-title {
+        @extend %mulish-300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: .5px;
+        color: #303030;
+    }
+    &__form {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arow-down.svg');
+            top: 15px;
+            right: 11px
+        }
+    }
+    &__label {
+        @extend %mulish-600;
+        font-size: 13px;
+        line-height: 32px;
+        letter-spacing: .5px;
+        color: #303030;
+        margin-right: 10px;
+    }
+    &__select {
+        width: 196px;
+        appearance: none;
+        border: 0.5px solid #E4E4E4;
+        border-radius: 2px;
+    }
+    &__select {
+        padding: 9px 13px 7px;
+    }
+    &__option {
+        @extend %mulish-300;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: .5px;
+    }
+    &__item {
+        height: 220px;
+        border: 0.5px solid #eee;
+        border-radius: 2px;
+        & + .product-list__item {
+            margin-top: 22px;
+        }
+        &:hover {
+            border: 0.5px solid transparent;
+        }
+    }
+    &__item-inner {
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        padding: 33px 54px 34px 38px;
+        border-left: 7px solid transparent;
+        border-radius: 2px 0px 0px 2px;
+        &:hover {
+            border-left: 7px solid #00A5F4;
+            box-shadow: 0px 0px 10px 1px #787878;
+        }
+    }
+    &__img {
+        margin-right: 31px;
+
+    }
+    &__info {
+        width: 255px;
+        margin-right: 78px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 165px;
+            background-color: #EEEEEE;
+            top: -5px;
+            right: -38px;
+        }
+    }
+    &__info-title {
+        @extend %mulish-600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: .5px;
+        color: #303030;
+        margin-bottom: 2px;
+    }
+    &__link-wrapper {
+        @extend %mulish-300;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: .5px;
+        color: #7C7C7C;
+    }
+    &__filter-type {
+        margin-right: 7px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 16px;
+            background-color: #7C7C7C;
+            top: 0;
+            right: -2px;
+        }
+    }
+    &__include-title {
+        @extend %mulish-400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: .5px;
+    }
+    &__include-item {
+        @extend %mulish-300;
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 14px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 9px;
+            background-image: url('../images/src/arrow-to-right-yellow.svg');
+            top: 5px;
+            left: 2px;
+        }
+    }
+    &__price {
+        width: 200px;
+        position: relative;
+    }
+    &__price-title {
+        @extend %mulish-600;
+        font-size: 10px;
+        line-height: 13px;
+        letter-spacing: .42px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        padding: 0 1px;
+        position: absolute;
+        width: 82px;
+        height: 13px;
+        top: 1px;
+        left: 61px;
+        z-index: 2;
+    }
+    &__price-box {
+        border: 0.5px solid #A3A3A3;
+        border-radius: 2px;
+        padding: 14px 14px 10px;
+        transform: translateY(6px);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price-pre,
+    &__price-total {
+        @extend %mulish-700;
+        font-size: 26px;
+        line-height: 26px;
+        color: #F5A623;
+    }
+    &__price-pre {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 13px;
+            background-image: url('../images/src/arrow-grey-price.svg');
+            top: 6px;
+            right: -35px;
+        }
+    }
+    &__price-subtitle {
+        @extend %mulish-300;
+        font-size: 13px;
+        line-height: 14px;
+        letter-spacing: .14px;
+        color: #303030;
+    }
+    &__price-btn {
+        margin-top: 16px;
+        display: block;
+        padding: 16px 0;
+        text-align: center;
+        background-color: #82C141;
+        border-radius: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        @extend %mulish-700;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+/*filter block*/
+.filters {
+    width: 321px;
+    height: 100%;
+    margin-right: 19px;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    padding: 27px 27px 27px 17px;
+    &__title {
+        @extend %mulish-600;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: .5px;
+        color: #303030;
+        margin-right: 11px;
+    }
+    &__title-box {
+        display: flex;
+        margin-bottom: 36px;
+    }
+    &__title-subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #F5A623;
+        @extend %mulish-300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+}
+
+.filter-type {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-type__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-type__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-price {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-price__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-price__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-size {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-size__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-size__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-size {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-size__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-size__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-spacific {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-spacific__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-spacific__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-type,
+.filter-price,
+.filter-size,
+.filter-spacific {
+    border-bottom: 1px solid #F0EDED;
+}
+
+
+
+
 
 
 @import 'media';
