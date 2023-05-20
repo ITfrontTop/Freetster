@@ -709,7 +709,7 @@
     }
 }
 
-
+/*Product-list content*/
 .product-list {
     &__inner {
         display: flex;
@@ -740,7 +740,7 @@
             position: absolute;
             width: 14px;
             height: 7px;
-            background-image: url('../images/arow-down.svg');
+            background-image: url('../images/src/arow-down.svg');
             top: 15px;
             right: 11px
         }
@@ -859,7 +859,7 @@
             position: absolute;
             width: 5px;
             height: 9px;
-            background-image: url('../images/arrow-to-right-yellow.svg');
+            background-image: url('../images/src/arrow-to-right-yellow.svg');
             top: 5px;
             left: 2px;
         }
@@ -932,8 +932,10 @@
     }
 }
 
+/*filter block*/
 .filters {
     width: 321px;
+    height: 100%;
     margin-right: 19px;
     border: 1px solid #F3F3F3;
     border-radius: 4px;
@@ -967,30 +969,406 @@
 
 .filter-type {
     &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
         @extend %mulish-600;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: .39px;
         text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
     }
     &__label {
         display: flex;
-    }
-    &__input {
-        margin-top: 27px;
-        border: 0.25px solid #303030;
-        border-radius: 2px;
-    }
-    &__text {
-        margin-top: 17px;
-        margin-left: 14px;
-        @extend %mulish-600;
+        position: relative;
+        @extend %mulish-300;
         font-size: 15px;
         line-height: 35px;
         letter-spacing: .5px;
         color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-type__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-type__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
     }
 }
+
+.filter-price {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-price__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-price__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-size {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-size__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-size__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-size {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-size__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-size__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-spacific {
+    &__title {
+        height: 41px;
+        display: flex;
+        align-items: center;
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .39px;
+        text-transform: uppercase;
+        background-color: #fff;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14px;
+            height: 7px;
+            background-image: url('../images/src/arrow-yellow-down.svg');
+            top: 16px;
+            right: 0;
+        }
+    }
+    &__title--active {
+        transition: all .5s;
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+    &__form {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    &__form--active {
+        display: none;
+        transition: all .5s;
+    }
+    &__label {
+        display: flex;
+        position: relative;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding-left: 33px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 9px;
+        left: 0;
+        border: .25px solid #303030;
+        border-radius: 2px;
+    }
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .filter-spacific__checkbox{
+            &::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 16px;
+                background-image: url('../images/src/checkbox-green.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+        &:focus + .filter-spacific__checkbox{
+            box-shadow: 0 0 0 1px #000;
+        }
+    }
+}
+
+.filter-type,
+.filter-price,
+.filter-size,
+.filter-spacific {
+    border-bottom: 1px solid #F0EDED;
+}
+
 
 
 
