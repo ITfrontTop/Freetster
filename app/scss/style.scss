@@ -1369,6 +1369,196 @@
     border-bottom: 1px solid #F0EDED;
 }
 
+/*product one*/
+.product-one {
+    &__description-inner {
+        background-color: #FCFCFC;
+    }
+    &__description {
+        max-width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__description-info-box {
+        height: 222px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__description-img-box {
+        margin-top: 57px;
+        margin-right: 46px;
+    }
+    &__description-info {
+        margin-top: 57px;
+    }
+    &_description-title {
+        @extend %mulish-600;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: .6px;
+        color: #303030;
+        margin-bottom: 2px;
+    }
+    &__link-wrapper {
+        margin-bottom: 35px;
+    }
+    &__description-include {
+        height: 41px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @extend %mulish-300;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: .43px;
+        color: #303030;
+    }
+    &__description-include-item {
+        width: 160px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 16px;
+            background-image: url('../images/src/checkbox-green.svg');
+            left: 0;
+            top: 2px;
+        }
+    }
+    &__description-include-text {
+        padding-left: 22px;
+    }
+    &__total-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__discount {
+        width: 340px;
+        height: 75px;
+        border: .5px solid #E2E2E2;
+        border-radius: 2px;
+        padding: 0 17px;
+        display: flex;
+        align-items: center;
+    }
+    &__discount-img-box {
+        margin-right: 13px;
+    }
+    &__discount-info-title,
+    &__discount-info-subtitle {
+        @extend %mulish-300;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .5px;
+        color: #303030;
+    }
+    &__discount-info-subtitle {
+        @extend %mulish-400;
+    }
+    &__total {
+        width: 340px;
+        height: 82px;
+        padding: 0 27px 0 16px;
+        background-color: #F8F8F8;
+        border: 1px solid #EEEEEE;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    &__total-title-box {
+        display: flex;
+    }
+    &__total-title {
+        @extend %mulish-400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .58px;
+        color: #303030;
+        margin-right: 5px;
+        align-self: flex-end;
+    }
+    &__total-cost {
+        @extend %mulish-600;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: .5px;
+        color: #F5A623;
+    }
+    &__total-subtitle {
+        @extend %mulish-300;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .5px;
+        color: #7C7C7C;
+    }
+    &__total-btn {
+        padding: 13px 23px 12px;
+        @extend %mulish-700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .5px;
+        color: #fff;
+        background-color: #82C141;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        width: 783px;
+        margin-right: 76px;
+    }
+    &__tabs {
+        margin-top: 36px;
+        margin-bottom: 51px;
+    }
+    &__tabs-title-box {
+        width: 741px;
+        border-bottom: .5px solid #CFCFCF;
+    }
+    &__tabs-title {
+        display: inline-block;
+        padding: 25px 0 19px;
+        @extend %mulish-700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .5px;
+        color: #303030;
+        border-bottom: 4px solid transparent;
+        transition: all .5s;
+        & + .product-one__tabs-title {
+            margin-left: 51px;
+        }
+    }
+    &__tabs-title--active {
+        border-bottom: 4px solid #303030;
+    }
+    &__tabs-content {
+        display: none;
+        &.product-one__tabs-content--active {
+            display: block;
+        }
+    }
+    &__tabs-text {
+        margin-top: 35px;
+        @extend %mulish-300;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: .5px;
+        color: #303030;
+    }
+    &__inside {
+        width: 340px;
+        
+    }
+}
+
 
 
 
