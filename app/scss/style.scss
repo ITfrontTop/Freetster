@@ -1553,6 +1553,107 @@
         letter-spacing: .5px;
         color: #303030;
     }
+    &__accessories {
+        height: 360px;
+        margin-bottom: 157px;
+    }
+    &__accessories-title {
+        @extend %mulish-400;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: .5px;
+        color: #303030;
+        padding: 20px 0 4px;
+    }
+    &__accessories-subtitle {
+        width: 741px;
+        @extend %mulish-300;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: .46px;
+        color: #D0021B;
+        padding-bottom: 12px;
+        border-bottom: .5px solid #CFCFCF;
+        margin-bottom: 42px;
+    }
+    &__accessories-form {
+        display: flex;
+    }
+    &__accessories-form-box {
+        position: relative;
+        width: 139px;
+        height: 100px;
+        border: 1px solid #F2F2F2;
+        border-radius: 2px;
+        padding: 11px 11px 22px;
+        &:hover {
+            border: 1px solid #82C141;
+            background-color: #82C141;
+        }
+        &+.product-one__accessories-form-box {
+            margin-left: 26px;
+            margin-bottom: 26px;
+        }
+    }
+    &__accessories-input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .product-one__accessories-checkbox {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 18px;
+                height: 14px;
+                background-image: url('../images/src/checkbox-white.svg');
+                top: -1px;
+                right: -6px;
+            }
+        }
+    }
+    &__accessories-checkbox {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 12px;
+        right: 12px;
+        border: 0.25px solid #303030;
+        border-radius: 2px;
+        &:hover {
+            border: 0.25px solid #fff;
+        }
+    }
+    &__accessories-text-box {
+        height: 66px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__accessories-text {
+        @extend %mulish-600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .44px;
+        text-transform: uppercase;
+        color: #707070;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__accessories-price {
+        @extend %mulish-300;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #7C7C7C;
+        &:hover {
+            color: #fff;
+        }
+    }
+
     &__inside {
         width: 340px;
         
