@@ -24,6 +24,14 @@ $(function () {
         $('.filter-spacific__form').toggleClass('filter-spacific__form--active');
     });
 
+    $('.product-one__tabs-title').on('click', function(e){
+        e.preventDefault();
+        $('.product-one__tabs-title').removeClass('product-one__tabs-title--active');
+        $(this).addClass('product-one__tabs-title--active');
+
+        $('.product-one__tabs-content').removeClass('product-one__tabs-content--active');
+        $($(this).attr('href')).addClass('product-one__tabs-content--active');
+    });
     
 
 });
