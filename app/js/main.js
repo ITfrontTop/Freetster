@@ -1,7 +1,9 @@
 $(function () {
     $('.slider__items').slick({
         slidesToShow: 3,
-        variableWidth: true
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000
     });
 
     $('.filter-type__title').on('click', function(){
