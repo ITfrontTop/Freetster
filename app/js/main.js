@@ -3,8 +3,38 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+              breakpoint: 1250,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+              }
+            },
+            {
+              breakpoint: 850,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+              }
+            },
+          ]
     });
+
+    $('.menu-btn-inner').on('click', function(){
+        $('.menu').toggleClass('menu--active');
+        
+    });
+
+    $('.register__btn-inner').on('click', function(){
+        $('.register').toggleClass('register--active');
+    });
+
 
     $('.filter-type__title').on('click', function(){
         $('.filter-type__title').toggleClass('filter-type__title--active');
