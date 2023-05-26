@@ -2147,6 +2147,19 @@
             flex-wrap: wrap;
         }
     }
+    .contacts {
+        &__inner {
+            flex-wrap: wrap;
+            margin: 40px 0 50px;
+        }
+        &__install {
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+
 }
  
 @media (max-width: 1100px) {
@@ -2361,6 +2374,17 @@
     .place {
         margin-bottom: 50px;
     }
+    .footer {
+        &__info-box+.footer__info-box {
+            margin-left: 20px;
+        }
+        &__logo-box {
+            height: 80px;
+        }
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 620px) {
@@ -2373,6 +2397,18 @@
     .title {
         font-size: 25px;
         line-height: 30px;
+    }
+    .slider {
+        margin-bottom: 50px;
+    }
+    .footer {
+        &__content {
+            flex-direction: column;
+        }
+        &__setting {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -2428,7 +2464,36 @@
             padding: 40px 0 50px;
         }
     }
+    .contacts {
+        &__list-input {
+            width: 100%;
+            padding: 11px 15px 10px 41px;
+            margin: 10px 0 10px;
+
+        }
+        &__list-form::before {
+            top: 25px;
+        }
+        &__list-btn {
+            padding: 11px 28px 10px;
+            border-radius: 2px;
+        }
+    }
 }
+
+@media (max-width: 500px) {
+    .footer {
+        &__bottom-inner {
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        &__social {
+            margin-bottom: 15px;
+        }
+    }
+}
+
 
 @media (max-width: 400px) {
     .info {
@@ -2440,6 +2505,27 @@
         }
         &.info__img-box {
             width: 350px;
+        }
+    }
+    .contacts {
+        &__install-text {
+            margin-bottom: 10px;
+        }
+        &__list-title,
+        &__install-title {
+            line-height: 30px;
+        }
+    }
+    .footer {
+        &__info {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__info-box {
+            margin: 15px 10px;
+        }
+        &__info-box+.footer__info-box {
+            margin: 10px;
         }
     }
 }
