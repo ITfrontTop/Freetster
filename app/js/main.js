@@ -26,13 +26,19 @@ $(function () {
           ]
     });
 
+    $('.filters__btn').on('click', function(){
+        $('.filters').toggleClass('filters--active');         
+        $('.filters__btn').toggleClass('filters__btn--active');
+    });
+
     $('.menu-btn-inner').on('click', function(){
         $('.menu').toggleClass('menu--active');
-        
+        $('.header').toggleClass('header--active');
     });
 
     $('.register__btn-inner').on('click', function(){
         $('.register').toggleClass('register--active');
+        $('.header').toggleClass('header--active');
     });
 
 

@@ -1185,6 +1185,9 @@
     border: 1px solid #F3F3F3;
     border-radius: 4px;
     padding: 27px 27px 27px 17px;
+    &__btn {
+        display: none;
+    }
     &__title {
         @extend %mulish-600;
         font-size: 22px;
@@ -2159,7 +2162,45 @@
             }
         }
     }
-
+    .filters {
+        transform: translateY(-200%);
+        transition: all .3s;
+        position: absolute;
+        background-color: #fff;
+        z-index: 10;
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            background-color: #fff;
+            border: 2px solid #000;
+            z-index: 20;
+        }
+    }
+    .filter-type,
+    .filter-price,
+    .filter-size,
+    .filter-spacific {
+        background-color: #fff;
+        justify-content: center;
+    }
+    .filters--active {
+        width: 100%;
+        justify-content: center;
+        transform: translateY(0%);
+        transition: all .3s;
+        position: absolute;
+    }
+    .product-list {
+        &__inner {
+            justify-content: center;
+        }
+    }
 }
  
 @media (max-width: 1100px) {
@@ -2185,6 +2226,15 @@
             height: 475px;
         }
     }
+    .search {
+        &__form {
+            flex-wrap: wrap;
+        }
+        &__inner {
+            height: 120%;
+        }
+    }
+    
 }
 
 @media (max-width: 1030px) {
@@ -2327,7 +2377,14 @@
 
         }
     }
-    
+    .header {
+        height: 80px;
+        transition: all .3s;
+    }
+    .header--active {
+        height: 150px;
+        transition: all .3s;
+    }
 }
 
 @media (max-width: 920px) {
@@ -2360,6 +2417,30 @@
     }
 }
 
+@media (max-width: 750px) {
+    .search {
+        &__pickup-select {
+            display: block;
+            width: 100%;
+        }
+        &__pickup-select, 
+        &__dropoff-select, 
+        &__duration-select {
+            display: block;
+            padding: 11px 44px 10px 36px;
+            &::before {
+                bottom: 13px;
+            }
+            &::after {
+                bottom: 16px;
+            }
+        }
+        &__duration-box::before {
+            bottom: 13px;
+        }
+    }
+}
+
 @media (max-width: 700px) {
     .header-home {
         margin-bottom: 50px;
@@ -2384,6 +2465,9 @@
         &__content {
             flex-wrap: wrap;
         }
+    }
+    .header-home {
+        margin-bottom: 0;
     }
 }
 
@@ -2526,6 +2610,15 @@
         }
         &__info-box+.footer__info-box {
             margin: 10px;
+        }
+    }
+    .search {
+        &__pickup-select, 
+        &__dropoff-select {
+            width: 100%;
+        }
+        &__btn {
+            margin: 25px 0 0 9px;
         }
     }
 }
