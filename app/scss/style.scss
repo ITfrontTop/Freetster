@@ -1641,7 +1641,7 @@
     &__description-info {
         margin-top: 57px;
     }
-    &_description-title {
+    &__description-title {
         @extend %mulish-600;
         font-size: 24px;
         line-height: 30px;
@@ -2131,6 +2131,10 @@
 
 /*media create and input in media.scss*/
 
+@media (max-width: 1260px) {
+
+}
+
 @media (max-width: 1240px) {
     .place {
         &__items {
@@ -2202,6 +2206,60 @@
             justify-content: center;
         }
     }
+    .product-one {
+        &__content {
+            width: 100%;
+        }
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__accessories {
+            margin-bottom: 0;
+        }
+        &__inside {
+            width: 100%;
+        }
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
+        &__tabs-title-box {
+            width: 100%;
+        }
+        &__accessories-subtitle {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .product-one {
+        &__description {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__description-info-box {
+            justify-content: center;
+        }
+        &__total-price {
+            align-items: center;
+        }
+        &__total {
+            margin-bottom: 15px;
+        }
+        &__content {
+            margin-right: 0;
+            max-width: 783px;
+        }
+        &__tabs-title-box {
+            max-width: 741px;
+        }
+        &__accessories-subtitle {
+            max-width: 741px;
+        }
+    }
 }
  
 @media (max-width: 1100px) {
@@ -2235,7 +2293,16 @@
             height: 120%;
         }
     }
-    
+    .recommendation {
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item+.recommendation__item {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
 }
 
 @media (max-width: 1030px) {
@@ -2474,6 +2541,46 @@
             line-height: 24px;
         }
     }
+    .product-one {
+        &__description-info-box {
+            flex-direction: column;
+            height: 350px;
+            
+        }
+        &__description-img-box {
+            margin-top: 20px;
+            margin-right: 0;
+
+        }
+        &__description-img {
+            margin: 0 auto;
+        }
+        &__description-info {
+            margin-top: 20px;
+        }
+        &__description-title {
+            text-align: center;
+        }
+    }
+    .product-list__link-wrapper.product-one__link-wrapper {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .product-one {
+        &__accessories-form {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__accessories {
+            height: 600px;
+        }
+        &__accessories-form-box+.product-one__accessories-form-box {
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -2543,6 +2650,11 @@
             margin-bottom: 10px;
         }
     }
+    .product-one {
+        &__description-info-box {
+            height: 400px;
+        }
+    }    
 }
 
 @media (max-width: 550px) {
@@ -2612,6 +2724,13 @@
             border-radius: 2px;
         }
     }
+    .recommendation {
+        &__title {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media (max-width: 500px) {
@@ -2623,6 +2742,12 @@
         }
         &__social {
             margin-bottom: 15px;
+        }
+    }
+    .product-one {
+        &__description-title {
+            font-size: 20px;
+            line-height: 25px;
         }
     }
 }
@@ -2668,6 +2793,38 @@
         }
         &__btn {
             margin: 25px 0 0 9px;
+        }
+    }
+    .product-one {
+        &__discount {
+            width: 100%;
+        }
+        &__total {
+            width: 100%;
+        }
+        &__total-subtitle {
+            font-size: 10px;
+        }
+        &__total-cost {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__total-btn {
+            padding: 10px 20px 9px;
+        }
+        &__description-include {
+            height: 100px;
+        }
+        &__discount-info-subtitle {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &__description-info-box {
+            height: 500px;
+        }
+        &__option {
+            height: 140px;
+            flex-direction: column;
         }
     }
 }
